@@ -15,7 +15,7 @@ import lombok.ToString;
 @Table(name = "manga")
 public class Manga {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(name = "titulo", nullable = false)
@@ -29,6 +29,10 @@ public class Manga {
 
     @Column(nullable = false)
     private boolean emision;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "nota_id")
+    private Nota nota;
 
 
 

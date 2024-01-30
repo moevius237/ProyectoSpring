@@ -17,7 +17,7 @@ import org.hibernate.validator.constraints.br.CPF;
 @Table(name = "usuario")
 public class Usuario {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
@@ -25,13 +25,5 @@ public class Usuario {
     private String nombre;
 
     @Column(nullable = false)
-    private boolean visto;
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "anime_id")
-    private Anime anime;
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "manga_id")
-    private Manga manga;
+    private String contra;
 }
