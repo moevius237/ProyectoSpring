@@ -22,5 +22,5 @@ public interface MangasApi {
                     content = {@Content(schema = @Schema(implementation = Manga.class))}),
             @ApiResponse(responseCode = "404")
     })
-    List<Anime> getAnime();
+    List<Manga> getManga();
 }

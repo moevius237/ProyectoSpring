@@ -10,4 +10,7 @@ import java.util.List;
 public interface AnimeRepository extends JpaRepository<Anime,Long> {
     @Query("Select t FROM Anime t where t.emision = true")
     List<Anime> encontrarAnimesFinalizados();
+
+    List<Anime> findByOrderByTituloDesc();
+
 }
