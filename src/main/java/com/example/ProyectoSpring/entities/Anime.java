@@ -30,11 +30,6 @@ public class Anime {
     private boolean emision;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "manga_id")
-    private Manga manga;
-
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "nota_id")
     private Nota nota;
 

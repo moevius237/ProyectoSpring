@@ -33,8 +33,4 @@ public class Manga {
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "nota_id")
     private Nota nota;
-
-
-
 }
-// INSERT INTO anime(titulo,autor,genero,emision) VALUES (Zipang,Kawaguchi Kaiji,historico,false)

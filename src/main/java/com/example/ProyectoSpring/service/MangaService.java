@@ -1,9 +1,10 @@
 package com.example.ProyectoSpring.service;
 
-import com.example.ProyectoSpring.controller.MangaRestController;
-import com.example.ProyectoSpring.entities.Anime;
 import com.example.ProyectoSpring.entities.Manga;
 import com.example.ProyectoSpring.repository.MangaRepository;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,5 +24,20 @@ public class MangaService {
     }
     public List<Manga> GetFirstOrdertituloDesc(){
         return mangaRepository.findByOrderByTituloDesc();
+    }
+
+    public List<Manga> GetMangasFinalizado(){
+        return mangaRepository.encontrarMangasFinalizado();
+    }
+    public void delete(long id){
+        mangaRepository.deleteById(id);
+    }
+    public List<Manga> GetMangaAutor(){
+        return mangaRepository.encontrarMangasAutor();
+    }
+
+    public List<Manga> GetMangaPageable(Integer pageNo, Integer pageSize, String sortBY, Sort.Direction orderby){
+        Pageable pageable = PageRequest.of(pageNo,pageSize,Sort.by(orderby,sortBY));
+        return mangaRepository.findAll(pageable).getContent();
     }
 }

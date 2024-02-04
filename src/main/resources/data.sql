@@ -28,20 +28,15 @@ INSERT INTO manga(id,titulo,autor,genero,emision,nota_id) VALUES (11,'Berserk','
 INSERT INTO manga(id,titulo,autor,genero,emision,nota_id) VALUES (12,'Rent a girlfriend','Reiji Miyajima','Romance',true,0)
 INSERT INTO manga(id,titulo,autor,genero,emision,nota_id) VALUES (13,'Solo leveling','Chu-Gong','Accion',false,7)
 
-
-
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Zipang','Kawaguchi Kaiji','historico',false,2,6)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('One Piece','Eichiro Oda','aventura',true,3,8)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Hajime no Ippo','MORIKAWA George','deportes',true,4,7)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Beastars','Itagaki Paru','psicologico',true,5,6)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Baki','Keisuke Itagaki','artes marciales',false,6,6)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Overlord','Kugane Maruyama','isekai',true,7,7)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Monster','Naoki Urasawaga','Misterio',false,8,9)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('SSSS.Gridman','Keiichi Hasegawa','Mechas',false,null,9)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Tengen Toppa Gurren Lagan','Hiroyuki Imaishi','Mechas',false,null,8)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Samurai Champloo','Shinichirō Watanabe','Historico',false,null,9)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Rent a girlfriend','Reiji Miyajima','Romance',true,12,1)
-INSERT INTO anime(titulo,autor,genero,emision,manga_id,nota_id) VALUES ('Solo leveling','Chu-Gong','Acion',true,13,5)
-
-
-
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Zipang','Kawaguchi Kaiji','historico',false,6)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('One Piece','Eichiro Oda','aventura',true,8)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Hajime no Ippo','MORIKAWA George','deportes',true,7)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Beastars','Itagaki Paru','psicologico',true,6)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Baki','Keisuke Itagaki','artes marciales',false,6)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Overlord','Kugane Maruyama','isekai',true,7)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Monster','Naoki Urasawaga','Misterio',false,9)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('SSSS.Gridman','Keiichi Hasegawa','Mechas',false,9)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Tengen Toppa Gurren Lagan','Hiroyuki Imaishi','Mechas',false,8)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Samurai Champloo','Shinichirō Watanabe','Historico',false,9)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Rent a girlfriend','Reiji Miyajima','Romance',true,1)
+INSERT INTO anime(titulo,autor,genero,emision,nota_id) VALUES ('Solo leveling','Chu-Gong','Acion',true,5)
