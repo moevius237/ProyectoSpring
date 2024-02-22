@@ -33,4 +33,5 @@ public class Anime {
     @JoinColumn(name = "nota_id")
     private Nota nota;
 
+
 }
